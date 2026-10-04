@@ -1,3 +1,11 @@
+#!/bin/bash
+# setup-readme.sh
+# Script to set up README.md content for the National Workforce Grid project
+
+ROOT=~/nwg
+FILE="$ROOT/README.md"
+
+cat << 'EOF' > "$FILE"
 # National Workforce Grid
 
 This repository contains the modular architecture for the **National Workforce Grid for Responsible Leadership and Technological Empowerment in Bangladesh**.
@@ -23,3 +31,6 @@ This repository contains the modular architecture for the **National Workforce G
 - Ensure responsible leadership and transparent accountability
 - Empower citizens through technology-driven governance
 - Provide scalable model for political organizations, NGOs, and national institutions
+EOF
+
+echo "✅ README.md content has been set up at $FILE"

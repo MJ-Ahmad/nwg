@@ -1,0 +1,92 @@
+{
+  "app": {
+    "name": {
+      "en": "National Workforce Grid",
+      "bn": "ন্যাশনাল ওয়ার্কফোর্স গ্রিড"
+    },
+    "tagline": {
+      "en": "Central coordination platform for a resilient national workforce system.",
+      "bn": "একটি শক্তিশালী জাতীয় কর্মীবাহিনী ব্যবস্থার জন্য কেন্দ্রীয় সমন্বয় প্ল্যাটফর্ম।"
+    }
+  },
+  "navigation": [
+    { "key": "home", "label": { "en": "Home", "bn": "হোম" } },
+    { "key": "identity", "label": { "en": "Identity", "bn": "পরিচয়" } },
+    { "key": "governance", "label": { "en": "Governance", "bn": "শাসন" } },
+    { "key": "geogrid", "label": { "en": "Geo Grid", "bn": "জিও গ্রিড" } },
+    { "key": "reporting", "label": { "en": "Reporting", "bn": "রিপোর্টিং" } }
+  ],
+  "metrics": [
+    { "key": "coverage", "label": { "en": "Coverage", "bn": "কভারেজ" }, "value": "98.4%", "context": { "en": "Operational coverage", "bn": "কার্যকর কভারেজ" } },
+    { "key": "verified", "label": { "en": "Verified", "bn": "যাচাইকৃত" }, "value": "2.6M", "context": { "en": "Credentialed profiles", "bn": "যোগ্যতা সম্পন্ন প্রোফাইল" } },
+    { "key": "alerts", "label": { "en": "Alerts", "bn": "এলার্ট" }, "value": "318", "context": { "en": "Priority incidents", "bn": "প্রাধান্য সংকট" } },
+    { "key": "uptime", "label": { "en": "Uptime", "bn": "আপটাইম" }, "value": "99.97%", "context": { "en": "System reliability", "bn": "সিস্টেম নির্ভরযোগ্যতা" } }
+  ],
+  "modules": {
+    "identity": {
+      "title": { "en": "Identity & Verification", "bn": "পরিচয় ও যাচাই" },
+      "description": {
+        "en": "Secure, verifiable identity management for workforce and service access.",
+        "bn": "কর্মী ও সেবা অ্যাক্সেসের জন্য নিরাপদ ও যাচাইকৃত পরিচয় ব্যবস্থাপনা।"
+      },
+      "status": { "en": "Operational", "bn": "কার্যকর" },
+      "badge": "identity"
+    },
+    "governance": {
+      "title": { "en": "Governance & Contracts", "bn": "শাসন ও কন্ট্রাক্ট" },
+      "description": {
+        "en": "Policies, accountability, and automation of governance workflows.",
+        "bn": "নীতি, দায়বদ্ধতা এবং শাসন প্রক্রিয়ার স্বয়ংক্রিয়তা।"
+      },
+      "status": { "en": "Active", "bn": "সক্রিয়" },
+      "badge": "governance"
+    },
+    "geogrid": {
+      "title": { "en": "Geo Grid & Zones", "bn": "জিও গ্রিড ও অঞ্চল" },
+      "description": {
+        "en": "Map-based regional coordination for distributed operations and zones.",
+        "bn": "বিতরণকৃত কার্যক্রম ও অঞ্চলগুলির জন্য মানচিত্রভিত্তিক আঞ্চলিক সমন্বয়।"
+      },
+      "status": { "en": "Mapped", "bn": "মানচিত্রিত" },
+      "badge": "geogrid"
+    },
+    "reporting": {
+      "title": { "en": "Reporting & Compliance", "bn": "রিপোর্টিং ও কমপ্লায়েন্স" },
+      "description": {
+        "en": "Operational reporting, auditability, and evidence-based compliance tracking.",
+        "bn": "কার্যক্রম রিপোর্ট, অডিটযোগ্যতা এবং প্রমাণভিত্তিক কমপ্লায়েন্স ট্র্যাকিং।"
+      },
+      "status": { "en": "Live", "bn": "লাইভ" },
+      "badge": "reporting"
+    }
+  },
+  "translations": {
+    "brand": {
+      "eyebrow": { "en": "National Digital Infrastructure", "bn": "জাতীয় ডিজিটাল অবকাঠামো" },
+      "title": { "en": "National Workforce Grid", "bn": "ন্যাশনাল ওয়ার্কফোর্স গ্রিড" }
+    },
+    "hero": {
+      "kicker": { "en": "Central Coordination Platform", "bn": "কেন্দ্রীয় সমন্বয় প্ল্যাটফর্ম" },
+      "title": {
+        "en": "A resilient, bilingual public system for workforce governance.",
+        "bn": "কর্মীবাহিনী শাসনের জন্য একটি স্থিতিশীল, দ্বিভাষিক জনসাধারণের সিস্টেম।"
+      },
+      "subtitle": {
+        "en": "Connect identity, policy, reporting, analytics, and operational execution through a unified national framework.",
+        "bn": "একটি একীভূত জাতীয় কাঠামোর মাধ্যমে পরিচয়, নীতি, রিপোর্টিং, বিশ্লেষণ ও কার্যক্রম সম্পাদনের সাথে সংযুক্ত হোন।"
+      },
+      "primaryAction": { "en": "Open dashboard", "bn": "ড্যাশবোর্ড খুলুন" },
+      "secondaryAction": { "en": "Review modules", "bn": "মডিউল দেখুন" }
+    },
+    "modules": {
+      "label": { "en": "Core Modules", "bn": "কোর মডিউল" },
+      "title": { "en": "Operational capability map", "bn": "কার্যক্ষমতা মানচিত্র" }
+    },
+    "footer": {
+      "text": {
+        "en": "© 2026 National Workforce Grid. Built for secure and scalable national coordination.",
+        "bn": "© ২০২৬ ন্যাশনাল ওয়ার্কফোর্স গ্রিড। নিরাপদ ও স্কেলেবল জাতীয় সমন্বয়ের জন্য নির্মিত।"
+      }
+    }
+  }
+}

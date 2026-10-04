@@ -1,0 +1,24 @@
+name: Validate Data Structure
+
+on:
+  push:
+    paths:
+      - 'data.json'
+      - '**.py'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - 'data.json'
+      - '**.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Validate data.json
+        run: python3 validate.py

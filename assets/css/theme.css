@@ -1,0 +1,23 @@
+:root {
+  --font-body: "Inter", "Noto Sans Bengali", sans-serif;
+  --font-bn: "Noto Sans Bengali", "Inter", sans-serif;
+}
+
+html[lang="bn"] body,
+html[lang="bn"] .brand-name,
+html[lang="bn"] .hero-copy h2,
+html[lang="bn"] h3,
+html[lang="bn"] h4,
+html[lang="bn"] p,
+html[lang="bn"] button,
+html[lang="bn"] .nav-link,
+html[lang="bn"] .lang-toggle {
+  font-family: var(--font-bn);
+}
+
+html[lang="bn"] .hero-copy h2 { letter-spacing: -0.03em; }
+html[lang="bn"] .metric-label,
+html[lang="bn"] .eyebrow,
+html[lang="bn"] .hero-kicker {
+  letter-spacing: 0.04em;
+}

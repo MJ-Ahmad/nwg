@@ -1,0 +1,31 @@
+{
+  "name": "national-workforce-grid",
+  "version": "1.0.0",
+  "description": "Central bilingual (EN|BN) project management system for national workforce coordination",
+  "main": "index.html",
+  "scripts": {
+    "start": "chmod +x run.sh && ./run.sh",
+    "validate": "python3 validate.py",
+    "add-module": "python3 add.py",
+    "dev": "PORT=8000 ./run.sh"
+  },
+  "keywords": [
+    "workforce",
+    "governance",
+    "bilingual",
+    "platform",
+    "modular",
+    "dashboard",
+    "national"
+  ],
+  "author": "MJ-Ahmad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MJ-Ahmad/national-workforce-grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MJ-Ahmad/national-workforce-grid/issues"
+  },
+  "homepage": "https://github.com/MJ-Ahmad/national-workforce-grid#readme"
+}
