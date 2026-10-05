@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "title_en": "Overview",
+      "title_bn": "সংক্ষিপ্ত বিবরণ",
+      "children": [
+        { "label_en": "Dashboard", "label_bn": "ড্যাশবোর্ড", "href": "/home/" },
+        { "label_en": "Structure", "label_bn": "গঠন", "href": "/pages/structure/" },
+        { "label_en": "Roles", "label_bn": "ভূমিকা", "href": "/pages/roles/" },
+        { "label_en": "Policy", "label_bn": "নীতি", "href": "/pages/policy/" }
+      ]
+    },
+    {
+      "title_en": "Systems",
+      "title_bn": "সিস্টেম",
+      "children": [
+        { "label_en": "Identity", "label_bn": "পরিচয়", "href": "/pages/identity/" },
+        { "label_en": "Geo Grid", "label_bn": "জিও গ্রিড", "href": "/pages/geogird/" },
+        { "label_en": "Analytics", "label_bn": "বিশ্লেষণ", "href": "/pages/analytics/" },
+        { "label_en": "Command", "label_bn": "কমান্ড", "href": "/pages/command/" }
+      ]
+    },
+    {
+      "title_en": "Administration",
+      "title_bn": "প্রশাসন",
+      "children": [
+        { "label_en": "Admin Panel", "label_bn": "অ্যাডমিন প্যানেল", "href": "/pages/admin/" },
+        { "label_en": "API", "label_bn": "এপিআই", "href": "/pages/api/" }
+      ]
+    }
+  ]
+}

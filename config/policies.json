@@ -1,0 +1,24 @@
+{
+  "policies": [
+    {
+      "name_en": "Code of Conduct",
+      "name_bn": "আচরণ বিধি",
+      "summary": "Ensures ethical and responsible behavior"
+    },
+    {
+      "name_en": "Reward & Recognition",
+      "name_bn": "পুরস্কার ও স্বীকৃতি",
+      "summary": "Recognition for excellence in service and leadership"
+    },
+    {
+      "name_en": "Disciplinary Model",
+      "name_bn": "শাস্তিমূলক ব্যবস্থা",
+      "summary": "Progressive accountability in violation cases"
+    },
+    {
+      "name_en": "Data Privacy & Security",
+      "name_bn": "তথ্য গোপনীয়তা ও নিরাপত্তা",
+      "summary": "Security and privacy protection for all data"
+    }
+  ]
+}

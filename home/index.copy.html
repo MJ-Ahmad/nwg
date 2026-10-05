@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Workforce Grid</title>
+    <meta
+      name="description"
+      content="A bilingual national workforce and governance dashboard."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <img src="assets/images/logo.svg" alt="Logo" class="brand-logo" />
+          <div>
+            <p class="eyebrow" data-i18n="brand.eyebrow">National Digital Infrastructure</p>
+            <h1 class="brand-name" data-i18n="brand.title">National Workforce Grid</h1>
+          </div>
+        </div>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation"></nav>
+
+        <div class="header-actions">
+          <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language">
+            <span>EN</span>
+            <span class="divider">|</span>
+            <span>BN</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="hero-kicker" data-i18n="hero.kicker">Central Coordination Platform</p>
+            <h2 data-i18n="hero.title">A resilient, bilingual public system for workforce governance.</h2>
+            <p class="hero-text" data-i18n="hero.subtitle">
+              Connect identity, policy, reporting, analytics, and operational execution through a unified national framework.
+            </p>
+            <div class="cta-row">
+              <button class="primary-btn" data-i18n="hero.primaryAction">Open dashboard</button>
+              <button class="secondary-btn" data-i18n="hero.secondaryAction">Review modules</button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="assets/images/splash.svg" alt="System illustration" />
+          </div>
+        </section>
+
+        <section class="metrics-grid" id="metrics-grid"></section>
+
+        <section class="modules-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow" data-i18n="modules.label">Core Modules</p>
+              <h3 data-i18n="modules.title">Operational capability map</h3>
+            </div>
+          </div>
+          <div id="module-grid" class="module-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p data-i18n="footer.text">© 2026 National Workforce Grid. Built for secure and scalable national coordination.</p>
+      </footer>
+    </div>
+
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

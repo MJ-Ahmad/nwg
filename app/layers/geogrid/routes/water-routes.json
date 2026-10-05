@@ -1,0 +1,45 @@
+{
+  "water_routes": [
+    {
+      "id": "padma-river",
+      "name_en": "Padma River Route",
+      "name_bn": "পদ্মা নদী রুট",
+      "type": "river",
+      "priority": "critical",
+      "coordinates": [23.4, 90.2],
+      "length_km": 356,
+      "coverage_zones": ["dhaka", "narayanganj", "rajshahi"],
+      "ports": ["dhaka-port", "narayanganj-port"],
+      "security_level": "high",
+      "monitoring_stations": 12,
+      "vessel_capacity": "large"
+    },
+    {
+      "id": "buriganga-river",
+      "name_en": "Buriganga River Route",
+      "name_bn": "বুড়িগঙ্গা নদী রুট",
+      "type": "river",
+      "priority": "high",
+      "coordinates": [23.7, 90.4],
+      "length_km": 14,
+      "coverage_zones": ["dhaka"],
+      "ports": ["dhaka-city-port"],
+      "security_level": "high",
+      "monitoring_stations": 8,
+      "vessel_capacity": "small"
+    },
+    {
+      "id": "meghna-river",
+      "name_en": "Meghna River Route",
+      "name_bn": "মেঘনা নদী রুট",
+      "type": "river",
+      "priority": "high",
+      "coordinates": [23.2, 91.0],
+      "length_km": 160,
+      "coverage_zones": ["dhaka", "narayanganj", "chittagong"],
+      "ports": ["meghna-port"],
+      "security_level": "high",
+      "monitoring_stations": 15
+    }
+  ]
+}

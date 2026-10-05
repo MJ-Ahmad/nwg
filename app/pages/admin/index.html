@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | National Workforce Grid</title>
+  <link rel="stylesheet" href="../../assets/css/admin.css" />
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <h2>Admin Console</h2>
+      <ul>
+        <li>Users</li>
+        <li>Roles</li>
+        <li>Geography</li>
+        <li>Policy</li>
+        <li>Workflow</li>
+      </ul>
+    </aside>
+
+    <main class="admin-main">
+      <h1>Workflow Administration</h1>
+
+      <form class="admin-form">
+        <label>
+          <span>Role Name</span>
+          <input type="text" placeholder="National Director" />
+        </label>
+
+        <label>
+          <span>Division</span>
+          <input type="text" placeholder="Dhaka" />
+        </label>
+
+        <label>
+          <span>Access Level</span>
+          <select>
+            <option>Executive</option>
+            <option>Operational</option>
+            <option>Specialist</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Workflow Action</span>
+          <textarea rows="4" placeholder="Approval workflow details..."></textarea>
+        </label>
+
+        <button type="submit">Save Workflow</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "country": "Bangladesh",
+  "area_km2": 56000,
+  "hierarchy": [
+    { "level": "Division", "count": 8 },
+    { "level": "District", "count": 64 },
+    { "level": "Police Station / Thana", "count": "Multiple" },
+    { "level": "Union", "count": "Distributed" },
+    { "level": "Ward", "count": "Networked" },
+    { "level": "Neighborhood", "count": "Community-based" }
+  ],
+  "structure": {
+    "headline": "8 Divisions → 64 Districts → Unions → Wards → Neighborhoods",
+    "description_en": "A nationwide geographic control system covering the entire country for coordinated workforce operations.",
+    "description_bn": "জাতীয় কর্মী ব্যবস্থাপনার জন্য সারা বাংলাদেশকে আচ্ছাদিত করে এমন ভৌগোলিক নিয়ন্ত্রণ ব্যবস্থা।"
+  }
+}

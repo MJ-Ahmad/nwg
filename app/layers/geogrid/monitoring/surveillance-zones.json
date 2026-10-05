@@ -1,0 +1,83 @@
+{
+  "surveillance_zones": [
+    {
+      "zone_id": "dhaka-central-zone",
+      "name_en": "Dhaka Central Surveillance Zone",
+      "name_bn": "ঢাকা কেন্দ্রীয় পর্যবেক্ষণ অঞ্চল",
+      "level": "division",
+      "coordinates": [23.8103, 90.4125],
+      "radius_km": 15,
+      "coverage": ["motijheel", "gulshan", "banani", "kawran-bazar"],
+      "security_level": "critical",
+      "monitoring_assets": {
+        "cctv_cameras": 450,
+        "sensors": 120,
+        "drones": 8,
+        "patrol_units": 25
+      },
+      "control_center": "dhaka-central-command",
+      "status": "active",
+      "last_update": "2026-10-04T14:30:00Z"
+    },
+    {
+      "zone_id": "motijheel-sector",
+      "name_en": "Motijheel Sector",
+      "name_bn": "মতিঝিল সেক্টর",
+      "level": "thana",
+      "coordinates": [23.7645, 90.4153],
+      "radius_km": 3,
+      "coverage": ["union-1", "union-2"],
+      "security_level": "high",
+      "monitoring_assets": {
+        "cctv_cameras": 85,
+        "sensors": 24,
+        "drones": 2,
+        "patrol_units": 8
+      },
+      "control_center": "motijheel-command",
+      "status": "active",
+      "incidents_24h": 3,
+      "response_time_sec": 120
+    },
+    {
+      "zone_id": "gulshan-sector",
+      "name_en": "Gulshan Sector",
+      "name_bn": "গুলশান সেক্টর",
+      "level": "thana",
+      "coordinates": [23.8103, 90.4125],
+      "radius_km": 4,
+      "coverage": ["union-3", "union-4", "union-5"],
+      "security_level": "high",
+      "monitoring_assets": {
+        "cctv_cameras": 120,
+        "sensors": 32,
+        "drones": 3,
+        "patrol_units": 12
+      },
+      "control_center": "gulshan-command",
+      "status": "active",
+      "incidents_24h": 5,
+      "response_time_sec": 95
+    },
+    {
+      "zone_id": "banani-sector",
+      "name_en": "Banani Sector",
+      "name_bn": "বনানী সেক্টর",
+      "level": "thana",
+      "coordinates": [23.8213, 90.3899],
+      "radius_km": 2.5,
+      "coverage": ["union-6", "union-7"],
+      "security_level": "high",
+      "monitoring_assets": {
+        "cctv_cameras": 65,
+        "sensors": 18,
+        "drones": 1,
+        "patrol_units": 6
+      },
+      "control_center": "banani-command",
+      "status": "active",
+      "incidents_24h": 2,
+      "response_time_sec": 110
+    }
+  ]
+}

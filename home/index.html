@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | National Workforce Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-box">
+        <div class="brand-mark">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="200" height="200" rx="30" fill="#0B1F2D"/>
+            <circle cx="100" cy="100" r="70" stroke="#47D7B3" stroke-width="10"/>
+            <circle cx="100" cy="100" r="42" fill="#79B7FF" fill-opacity="0.15" stroke="#79B7FF" stroke-width="6"/>
+            <path d="M100 45L116 85H84L100 45ZM100 155L84 115H116L100 155ZM45 100L85 84V116L45 100ZM155 100L115 116V84L155 100Z" fill="#47D7B3"/>
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">National</p>
+          <h2>Workforce Grid</h2>
+        </div>
+      </div>
+
+      <nav class="nav-tree" id="nav-tree"></nav>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Operational Command</p>
+          <h1>National Workforce Coordination Dashboard</h1>
+        </div>
+
+        <div class="header-actions">
+          <button class="lang-btn" id="lang-toggle">EN | BN</button>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <span class="label">Coverage</span>
+          <strong>98.4%</strong>
+          <small>Operational reach</small>
+        </div>
+        <div class="stat-card">
+          <span class="label">Verified</span>
+          <strong>2.6M</strong>
+          <small>Profiles verified</small>
+        </div>
+        <div class="stat-card">
+          <span class="label">Alerts</span>
+          <strong>318</strong>
+          <small>Priority events</small>
+        </div>
+        <div class="stat-card">
+          <span class="label">Uptime</span>
+          <strong>99.97%</strong>
+          <small>Platform stability</small>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <h3>Geographic Control System</h3>
+            <span class="badge live">Live</span>
+          </div>
+          <div class="tree-list">
+            <div class="tree-item">
+              <span class="tree-level">Divisions</span>
+              <strong>8</strong>
+            </div>
+            <div class="tree-item">
+              <span class="tree-level">Districts</span>
+              <strong>64</strong>
+            </div>
+            <div class="tree-item">
+              <span class="tree-level">Police Stations</span>
+              <strong>Multiple</strong>
+            </div>
+            <div class="tree-item">
+              <span class="tree-level">Unions</span>
+              <strong>Distributed</strong>
+            </div>
+            <div class="tree-item">
+              <span class="tree-level">Wards</span>
+              <strong>Networked</strong>
+            </div>
+            <div class="tree-item">
+              <span class="tree-level">Neighborhoods</span>
+              <strong>Community-based</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h3>Leadership Layers</h3>
+            <span class="badge">Core</span>
+          </div>
+
+          <ul class="layer-list">
+            <li><span>Identity Layer</span><em>Secure DID infrastructure</em></li>
+            <li><span>Geo-Grid Layer</span><em>Regional and local mapping</em></li>
+            <li><span>Analytics Layer</span><em>Reports, forecasting, insights</em></li>
+            <li><span>Command Layer</span><em>Operational decision hub</em></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel">
+          <div class="panel-head">
+            <h3>Role Model</h3>
+          </div>
+          <div class="role-stack">
+            <div class="role-node">National Director</div>
+            <div class="role-node">Division Head</div>
+            <div class="role-node">District Coordinator</div>
+            <div class="role-node">Union Leader</div>
+            <div class="role-node">Ward Coordinator</div>
+            <div class="role-node">Team Member</div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h3>Policy Highlights</h3>
+          </div>
+          <ul class="policy-list">
+            <li>Code of conduct and ethics</li>
+            <li>Reward and recognition framework</li>
+            <li>Progressive disciplinary model</li>
+            <li>Privacy and data governance</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Last updated: <strong id="last-updated">--</strong></span>
+      <span>© 2026 National Workforce Grid</span>
+      <span>Time: <strong id="clock">--:--:--</strong></span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "decision_nodes": [
+    {
+      "node_id": "union-1-leader",
+      "title": "Union 1 Leader",
+      "level": "union",
+      "authority_type": "executive",
+      "decision_domain": ["resource_allocation", "task_assignment", "incident_response"],
+      "reporting_to": "thana_manager",
+      "decision_time_limit_hours": 2,
+      "subordinates": ["ward_coordinator_1", "ward_coordinator_2", "ward_coordinator_3"],
+      "data_access": ["zone_surveillance", "incident_reports", "resource_status"]
+    },
+    {
+      "node_id": "thana-manager-motijheel",
+      "title": "Motijheel Thana Manager",
+      "level": "thana",
+      "authority_type": "operational",
+      "decision_domain": ["zone_operations", "resource_deployment", "emergency_response"],
+      "reporting_to": "district_coordinator",
+      "decision_time_limit_hours": 1,
+      "subordinates": ["union_1_leader", "union_2_leader"],
+      "data_access": ["all_thana_data", "divisional_alerts", "policy_framework"]
+    },
+    {
+      "node_id": "district-coordinator-dhaka",
+      "title": "Dhaka District Coordinator",
+      "level": "district",
+      "authority_type": "strategic",
+      "decision_domain": ["district_strategy", "resource_distribution", "crisis_management"],
+      "reporting_to": "division_head",
+      "decision_time_limit_hours": 0.5,
+      "subordinates": ["thana_manager_motijheel", "thana_manager_gulshan", "thana_manager_banani"],
+      "data_access": ["all_district_data", "regional_intelligence", "national_framework"]
+    }
+  ]
+}

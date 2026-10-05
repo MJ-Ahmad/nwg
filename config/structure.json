@@ -1,0 +1,125 @@
+{
+  "geography": {
+    "country": "Bangladesh",
+    "area_km2": 56000,
+    "hierarchy": [
+      {
+        "level": 1,
+        "name": "Division",
+        "count": 8,
+        "items": [
+          {
+            "id": "div-dhaka",
+            "name_en": "Dhaka Division",
+            "name_bn": "ঢাকা বিভাগ",
+            "code": "DH",
+            "area_km2": 12000,
+            "population_approx": "80 million"
+          },
+          {
+            "id": "div-chattogram",
+            "name_en": "Chattogram Division",
+            "name_bn": "চট্টগ্রাম বিভাগ",
+            "code": "CT",
+            "area_km2": 13000,
+            "population_approx": "50 million"
+          },
+          {
+            "id": "div-khulna",
+            "name_en": "Khulna Division",
+            "name_bn": "খুলনা বিভাগ",
+            "code": "KH",
+            "area_km2": 9000,
+            "population_approx": "20 million"
+          },
+          {
+            "id": "div-rajshahi",
+            "name_en": "Rajshahi Division",
+            "name_bn": "রাজশাহী বিভাগ",
+            "code": "RJ",
+            "area_km2": 8000,
+            "population_approx": "18 million"
+          },
+          {
+            "id": "div-barishal",
+            "name_en": "Barishal Division",
+            "name_bn": "বরিশাল বিভাগ",
+            "code": "BR",
+            "area_km2": 3500,
+            "population_approx": "10 million"
+          },
+          {
+            "id": "div-sylhet",
+            "name_en": "Sylhet Division",
+            "name_bn": "সিলেট বিভাগ",
+            "code": "SY",
+            "area_km2": 2000,
+            "population_approx": "12 million"
+          },
+          {
+            "id": "div-rangpur",
+            "name_en": "Rangpur Division",
+            "name_bn": "রংপুর বিভাগ",
+            "code": "RG",
+            "area_km2": 2500,
+            "population_approx": "15 million"
+          },
+          {
+            "id": "div-mymensingh",
+            "name_en": "Mymensingh Division",
+            "name_bn": "ময়মনসিংহ বিভাগ",
+            "code": "MY",
+            "area_km2": 2000,
+            "population_approx": "12 million"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "name": "District",
+        "count": 64,
+        "parent_level": "Division"
+      },
+      {
+        "level": 3,
+        "name": "Thana/Police Station",
+        "parent_level": "District"
+      },
+      {
+        "level": 4,
+        "name": "Union",
+        "parent_level": "Thana",
+        "average_per_thana": 8
+      },
+      {
+        "level": 5,
+        "name": "Ward",
+        "parent_level": "Union",
+        "average_per_union": 9
+      },
+      {
+        "level": 6,
+        "name": "Neighborhood",
+        "parent_level": "Ward",
+        "average_per_ward": 4
+      }
+    ],
+    "node_structure": {
+      "every_level": {
+        "zone_coordinator": {
+          "role": "Overall oversight",
+          "responsibility": "Leadership & coordination"
+        },
+        "digital_workforce_ledger": {
+          "description": "Secure record of all members"
+        },
+        "reporting_node": {
+          "description": "Real-time monitoring & feedback"
+        },
+        "smart_contract_system": {
+          "description": "Automated reward & discipline"
+        }
+      }
+    }
+  }
+}

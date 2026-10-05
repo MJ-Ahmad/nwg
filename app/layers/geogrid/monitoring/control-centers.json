@@ -1,0 +1,90 @@
+{
+  "control_centers": [
+    {
+      "id": "dhaka-national-command",
+      "name_en": "Dhaka National Command Center",
+      "name_bn": "ঢাকা জাতীয় কমান্ড সেন্টার",
+      "level": "national",
+      "coordinates": [23.8103, 90.4125],
+      "authority": "National Director",
+      "operational_area": "All of Bangladesh",
+      "coverage_divisions": 8,
+      "staff": 250,
+      "communication_bandwidth": "gigabit",
+      "real_time_feeds": 500,
+      "status": "operational",
+      "capabilities": [
+        "Strategic oversight",
+        "Crisis management",
+        "Multi-division coordination",
+        "National resource allocation",
+        "Policy implementation"
+      ]
+    },
+    {
+      "id": "dhaka-central-command",
+      "name_en": "Dhaka Division Command Center",
+      "name_bn": "ঢাকা বিভাগ কমান্ড সেন্টার",
+      "level": "division",
+      "coordinates": [23.8103, 90.4125],
+      "authority": "Division Head",
+      "operational_area": "Dhaka Division",
+      "coverage_districts": 13,
+      "staff": 120,
+      "communication_bandwidth": "100mbps",
+      "real_time_feeds": 200,
+      "status": "operational",
+      "capabilities": [
+        "Divisional coordination",
+        "District supervision",
+        "Resource distribution",
+        "Emergency response",
+        "Performance monitoring"
+      ]
+    },
+    {
+      "id": "motijheel-command",
+      "name_en": "Motijheel Thana Control",
+      "name_bn": "মতিঝিল থানা নিয়ন্ত্রণ",
+      "level": "thana",
+      "coordinates": [23.7645, 90.4153],
+      "authority": "Thana Manager",
+      "operational_area": "Motijheel Thana",
+      "coverage_unions": 2,
+      "coverage_wards": 18,
+      "staff": 35,
+      "communication_bandwidth": "50mbps",
+      "real_time_feeds": 85,
+      "status": "operational",
+      "capabilities": [
+        "Real-time surveillance",
+        "Incident response",
+        "Union coordination",
+        "Field operations",
+        "Local reporting"
+      ]
+    },
+    {
+      "id": "gulshan-command",
+      "name_en": "Gulshan Thana Control",
+      "name_bn": "গুলশান থানা নিয়ন্ত্রণ",
+      "level": "thana",
+      "coordinates": [23.8103, 90.4125],
+      "authority": "Thana Manager",
+      "operational_area": "Gulshan Thana",
+      "coverage_unions": 3,
+      "coverage_wards": 27,
+      "staff": 50,
+      "communication_bandwidth": "50mbps",
+      "real_time_feeds": 120,
+      "status": "operational",
+      "capabilities": [
+        "Multi-union coordination",
+        "Real-time surveillance",
+        "Emergency management",
+        "Resource deployment",
+        "Performance analytics"
+      ]
+    }
+  ]
+}

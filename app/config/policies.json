@@ -1,0 +1,28 @@
+{
+  "policies": [
+    {
+      "name_en": "Code of Conduct",
+      "name_bn": "আচরণ বিধি",
+      "summary_en": "Ethical and responsible standards for all actors",
+      "summary_bn": "সব অংশগ্রহণকারীর নৈতিক ও দায়িত্বশীল আচরণ"
+    },
+    {
+      "name_en": "Reward & Recognition",
+      "name_bn": "পুরস্কার ও স্বীকৃতি",
+      "summary_en": "Recognition for leadership and service excellence",
+      "summary_bn": "নেতৃত্ব ও সেবা উৎকর্ষের স্বীকৃতি"
+    },
+    {
+      "name_en": "Disciplinary Model",
+      "name_bn": "শাস্তিমূলক ব্যবস্থা",
+      "summary_en": "Progressive accountability framework",
+      "summary_bn": "ক্রমবর্ধমান জবাবদিহি কাঠামো"
+    },
+    {
+      "name_en": "Data Security",
+      "name_bn": "তথ্য নিরাপত্তা",
+      "summary_en": "Protection against misuse and unauthorized access",
+      "summary_bn": "অপব্যবহার ও অননুমোদিত প্রবেশ থেকে সুরক্ষা"
+    }
+  ]
+}

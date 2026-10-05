@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo-Grid System | National Workforce Grid</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: "Inter", sans-serif;
+      background: #07131f;
+      color: #edf6ff;
+    }
+
+    .geogrid-shell {
+      display: grid;
+      grid-template-columns: 280px 1fr 320px;
+      min-height: 100vh;
+      gap: 1px;
+      background: rgba(121,183,255,0.1);
+    }
+
+    .geogrid-sidebar {
+      background: rgba(12,23,31,0.95);
+      border-right: 1px solid rgba(121,183,255,0.2);
+      padding: 18px;
+      overflow-y: auto;
+    }
+
+    .geogrid-map {
+      background: #0a1621;
+      position: relative;
+    }
+
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+    .geogrid-panel {
+      background: rgba(12,23,31,0.95);
+      border-left: 1px solid rgba(121,183,255,0.2);
+      padding: 18px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .sidebar-section {
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(121,183,255,0.1);
+    }
+
+    .sidebar-title {
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #47d7b3;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    #layer-toggle label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 0;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    #layer-toggle input {
+      cursor: pointer;
+    }
+
+    .monitor-card, .decision-node {
+      background: rgba(15,29,41,0.6);
+      border: 1px solid rgba(71,215,179,0.2);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 0.85rem;
+    }
+
+    .monitor-card h3, .decision-node h4 {
+      margin: 0 0 10px;
+      color: #47d7b3;
+      font-size: 0.95rem;
+    }
+
+    .incident {
+      padding: 8px;
+      margin: 6px 0;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      background: rgba(121,183,255,0.1);
+      border-left: 3px solid #79b7ff;
+    }
+
+    .incident.high {
+      border-left-color: #ff6b6b;
+    }
+
+    .incident.medium {
+      border-left-color: #e7b75a;
+    }
+
+    .decision-btn {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      background: rgba(71,215,179,0.1);
+      border: 1px solid #47d7b3;
+      color: #47d7b3;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: 0.2s;
+    }
+
+    .decision-btn:hover {
+      background: rgba(71,215,179,0.2);
+    }
+
+    .stats-summary {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      background: rgba(121,183,255,0.05);
+      border-radius: 6px;
+    }
+
+    .stat strong {
+      color: #47d7b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="geogrid-shell">
+    <!-- Left Sidebar: Layer Controls -->
+    <aside class="geogrid-sidebar">
+      <div class="sidebar-section">
+        <p class="sidebar-title">Map Layers</p>
+        <div id="layer-toggle"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-title">Geography</p>
+        <div id="geography-info" class="stats-summary"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <p class="sidebar-title">Zoom Controls</p>
+        <button id="zoom-in" style="padding: 8px; width: 100%; margin-bottom: 6px;">+ Zoom In</button>
+        <button id="zoom-out" style="padding: 8px; width: 100%;">- Zoom Out</button>
+      </div>
+    </aside>
+
+    <!-- Center: Interactive GIS Map -->
+    <div class="geogrid-map">
+      <div id="map"></div>
+    </div>
+
+    <!-- Right Panel: Monitoring & Decision -->
+    <aside class="geogrid-panel">
+      <div id="monitoring-dashboard"></div>
+      <div id="decision-panel"></div>
+    </aside>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+  <script type="module">
+    import GeoGridMapEngine from './js/map-engine.js';
+    import GeoGridControlPanel from './js/control-panel.js';
+
+    async function init() {
+      // Initialize map engine
+      const mapEngine = new GeoGridMapEngine('map');
+
+      // Load data
+      const divisionsData = await fetch('/app/layers/geogrid/data/divisions.json').then(r => r.json());
+      const surveillanceData = await fetch('/app/layers/geogrid/monitoring/surveillance-zones.json').then(r => r.json());
+      const landRoutesData = await fetch('/app/layers/geogrid/routes/land-routes.json').then(r => r.json());
+
+      // Render map layers
+      await mapEngine.loadDivisions(divisionsData);
+      await mapEngine.loadSurveillanceZones(surveillanceData);
+
+      landRoutesData.land_routes.forEach(route => {
+        mapEngine.addRoute(route, '#e7b75a');
+      });
+
+      // Initialize control panel
+      const controlPanel = new GeoGridControlPanel(mapEngine);
+
+      // Zoom controls
+      document.getElementById('zoom-in').addEventListener('click', () => {
+        mapEngine.map.zoomIn();
+      });
+
+      document.getElementById('zoom-out').addEventListener('click', () => {
+        mapEngine.map.zoomOut();
+      });
+
+      // Display statistics
+      const stats = mapEngine.getLayerStats();
+      document.getElementById('geography-info').innerHTML = `
+        <div class="stat"><span>Divisions:</span><strong>${stats.divisions}</strong></div>
+        <div class="stat"><span>Zones:</span><strong>${stats.surveillance_zones}</strong></div>
+        <div class="stat"><span>Routes:</span><strong>${stats.routes}</strong></div>
+      `;
+    }
+
+    init();
+  </script>
+</body>
+</html>

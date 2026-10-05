@@ -1,0 +1,60 @@
+{
+  "roles": [
+    {
+      "id": "national-director",
+      "name_en": "National Director",
+      "name_bn": "জাতীয় পরিচালক",
+      "level": "National",
+      "responsibility_en": "Overall governance and strategic oversight",
+      "responsibility_bn": "সামগ্রিক শাসন ও কৌশলগত তত্ত্বাবধান"
+    },
+    {
+      "id": "division-head",
+      "name_en": "Division Head",
+      "name_bn": "বিভাগ প্রধান",
+      "level": "Division",
+      "responsibility_en": "Regional leadership and performance management",
+      "responsibility_bn": "আঞ্চলিক নেতৃত্ব ও কর্মক্ষমতা ব্যবস্থাপনা"
+    },
+    {
+      "id": "district-coordinator",
+      "name_en": "District Coordinator",
+      "name_bn": "জেলা সমন্বয়কারী",
+      "level": "District",
+      "responsibility_en": "Operational coordination across districts",
+      "responsibility_bn": "জেলা জুড়ে অপারেশনাল সমন্বয়"
+    },
+    {
+      "id": "thana-manager",
+      "name_en": "Thana Manager",
+      "name_bn": "থানা ব্যবস্থাপক",
+      "level": "Thana",
+      "responsibility_en": "Field execution and local operations",
+      "responsibility_bn": "মাঠ পর্যায়ে কার্যকরী বাস্তবায়ন"
+    },
+    {
+      "id": "union-leader",
+      "name_en": "Union Leader",
+      "name_bn": "ইউনিয়ন নেতা",
+      "level": "Union",
+      "responsibility_en": "Community execution and area management",
+      "responsibility_bn": "কমিউনিটি বাস্তবায়ন ও এলাকা ব্যবস্থাপনা"
+    },
+    {
+      "id": "ward-coordinator",
+      "name_en": "Ward Coordinator",
+      "name_bn": "ওয়ার্ড সমন্বয়কারী",
+      "level": "Ward",
+      "responsibility_en": "Neighborhood coordination and task execution",
+      "responsibility_bn": "পাড়া পর্যায়ে সমন্বয় ও কার্যক্রম"
+    },
+    {
+      "id": "team-member",
+      "name_en": "Team Member",
+      "name_bn": "দল সদস্য",
+      "level": "Neighborhood",
+      "responsibility_en": "Task support and activity participation",
+      "responsibility_bn": "কার্যক্রমে অংশগ্রহণ ও সহায়তা"
+    }
+  ]
+}

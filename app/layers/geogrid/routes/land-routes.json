@@ -1,0 +1,53 @@
+{
+  "land_routes": [
+    {
+      "id": "national-highway-1",
+      "name_en": "National Highway 1",
+      "name_bn": "জাতীয় সড়ক ১",
+      "type": "highway",
+      "priority": "critical",
+      "route": [
+        [23.8103, 90.4125],
+        [23.7645, 90.4153],
+        [23.6500, 90.4500],
+        [23.5000, 90.5000]
+      ],
+      "coverage_zones": ["dhaka", "narayanganj"],
+      "access_points": ["motijheel", "gulshan", "banani"],
+      "security_level": "high",
+      "monitoring_points": 45,
+      "control_centers": ["dhaka-central"]
+    },
+    {
+      "id": "regional-highway-2",
+      "name_en": "Regional Highway 2",
+      "name_bn": "আঞ্চলিক সড়ক ২",
+      "type": "regional",
+      "priority": "high",
+      "route": [
+        [23.8213, 90.3899],
+        [23.8300, 90.3500],
+        [23.8500, 90.3000]
+      ],
+      "coverage_zones": ["dhaka"],
+      "access_points": ["banani", "kawran-bazar"],
+      "security_level": "medium",
+      "monitoring_points": 28
+    },
+    {
+      "id": "district-road-3",
+      "name_en": "District Road 3",
+      "name_bn": "জেলা সড়ক ৩",
+      "type": "district",
+      "priority": "medium",
+      "route": [
+        [23.7665, 90.3765],
+        [23.7500, 90.3600]
+      ],
+      "coverage_zones": ["dhaka"],
+      "access_points": ["kawran-bazar"],
+      "security_level": "medium",
+      "monitoring_points": 15
+    }
+  ]
+}

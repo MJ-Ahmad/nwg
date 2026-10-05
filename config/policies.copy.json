@@ -1,0 +1,63 @@
+{
+  "policy_framework": {
+    "version": "1.0.0",
+    "policies": [
+      {
+        "id": "policy-001",
+        "name_en": "Code of Conduct",
+        "name_bn": "আচরণ বিধি",
+        "category": "Ethics",
+        "description_en": "Guidelines for responsible and ethical behavior",
+        "description_bn": "দায়িত্বশীল ও নৈতিক আচরণের নির্দেশিকা",
+        "sections": [
+          {
+            "title_en": "General Principles",
+            "title_bn": "সাধারণ নীতিমালা",
+            "points": [
+              "Respect for all citizens",
+              "Transparent decision-making",
+              "Accountability for actions",
+              "Prohibition of corruption"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "policy-002",
+        "name_en": "Reward & Recognition System",
+        "name_bn": "পুরস্কার ও স্বীকৃতি ব্যবস্থা",
+        "category": "Incentives",
+        "description_en": "Framework for recognizing exceptional performance",
+        "description_bn": "অসাধারণ কর্মক্ষমতার স্বীকৃতি প্রদান",
+        "criteria": [
+          "Excellence in execution",
+          "Innovation in approach",
+          "Community impact",
+          "Teamwork & collaboration"
+        ]
+      },
+      {
+        "id": "policy-003",
+        "name_en": "Disciplinary Measures",
+        "name_bn": "শাস্তিমূলক ব্যবস্থা",
+        "category": "Accountability",
+        "description_en": "Progressive discipline for policy violations",
+        "description_bn": "নীতি লঙ্ঘনের জন্য ক্রমবর্ধমান শাস্তি",
+        "levels": [
+          "Warning",
+          "Suspension",
+          "Demotion",
+          "Termination"
+        ]
+      },
+      {
+        "id": "policy-004",
+        "name_en": "Data Privacy & Security",
+        "name_bn": "তথ্য গোপনীয়তা ও নিরাপত্তা",
+        "category": "Security",
+        "description_en": "Protection of citizen and workforce data",
+        "description_bn": "নাগরিক ও কর্মীবাহিনী তথ্য সুরক্ষা"
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Structure | NWG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #47d7b3;
+            --secondary: #79b7ff;
+            --dark: #07131f;
+            --light: #edf6ff;
+            --muted: #9bb8cc;
+        }
+        body {
+            font-family: "Inter", "Noto Sans Bengali", sans-serif;
+            background: linear-gradient(135deg, #07131f, #0a1821);
+            color: var(--light);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 12px; color: var(--primary); }
+        .subtitle { font-size: 1.1rem; color: var(--muted); margin-bottom: 40px; }
+        .hierarchy-tree {
+            background: rgba(11, 25, 38, 0.6);
+            border: 1px solid rgba(71, 215, 179, 0.2);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+        .level {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(17, 32, 46, 0.5);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+        }
+        .level-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .level-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+        }
+        .info-card {
+            padding: 16px;
+            background: rgba(71, 215, 179, 0.05);
+            border: 1px solid rgba(71, 215, 179, 0.1);
+            border-radius: 8px;
+        }
+        .info-card strong { color: var(--primary); }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(71, 215, 179, 0.1);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: 0.3s ease;
+        }
+        .back-btn:hover {
+            background: var(--primary);
+            color: #022539;
+        }
+        html[lang="bn"] * { font-family: "Noto Sans Bengali", "Inter", sans-serif; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-btn">← Back to Home</a>
+        <h1>Geographic Structure of Bangladesh</h1>
+        <p class="subtitle">8 Divisions → 64 Districts → Thana → Unions → Wards → Neighborhoods</p>
+
+        <div class="hierarchy-tree">
+            <div class="level">
+                <div class="level-title">Level 1: Divisions</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Count:</strong> 8</div>
+                    <div class="info-card"><strong>Area:</strong> 56,000 km²</div>
+                    <div class="info-card"><strong>Coordinator:</strong> Division Head</div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-title">Level 2: Districts</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Count:</strong> 64</div>
+                    <div class="info-card"><strong>Per Division:</strong> 8</div>
+                    <div class="info-card"><strong>Manager:</strong> District Coordinator</div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-title">Level 3: Thana (Police Stations)</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Per District:</strong> 5-10</div>
+                    <div class="info-card"><strong>Manager:</strong> Thana Manager</div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-title">Level 4: Unions</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Per Thana:</strong> ~8</div>
+                    <div class="info-card"><strong>Leader:</strong> Union Leader</div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-title">Level 5: Wards</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Per Union:</strong> ~9</div>
+                    <div class="info-card"><strong>Coordinator:</strong> Ward Coordinator</div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-title">Level 6: Neighborhoods</div>
+                <div class="level-info">
+                    <div class="info-card"><strong>Per Ward:</strong> ~4</div>
+                    <div class="info-card"><strong>Base Unit:</strong> Community Level</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

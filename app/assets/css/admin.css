@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: #07131f;
+  color: #edf6ff;
+  font-family: "Inter", sans-serif;
+}
+
+.admin-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  background: rgba(12, 23, 31, 0.9);
+  border-right: 1px solid rgba(121,183,255,0.18);
+  padding: 24px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-sidebar li {
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(71,215,179,0.10);
+  border-radius: 10px;
+}
+
+.admin-main {
+  padding: 40px 32px;
+}
+
+.admin-form {
+  display: grid;
+  gap: 18px;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #a7bfd2;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  border: 1px solid rgba(121,183,255,0.20);
+  background: rgba(15,29,41,0.75);
+  color: #edf6ff;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.admin-form button {
+  background: linear-gradient(135deg, #47d7b3, #79b7ff);
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-weight: 700;
+  color: #052536;
+  cursor: pointer;
+}

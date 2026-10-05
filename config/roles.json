@@ -1,0 +1,39 @@
+{
+  "roles": [
+    {
+      "role": "National Director",
+      "level": "National",
+      "responsibility": "Overall governance and strategic oversight"
+    },
+    {
+      "role": "Division Head",
+      "level": "Division",
+      "responsibility": "Regional implementation and supervision"
+    },
+    {
+      "role": "District Coordinator",
+      "level": "District",
+      "responsibility": "Operational coordination across districts"
+    },
+    {
+      "role": "Thana Manager",
+      "level": "Thana",
+      "responsibility": "Execution at local administrative level"
+    },
+    {
+      "role": "Union Leader",
+      "level": "Union",
+      "responsibility": "Local implementation and community coordination"
+    },
+    {
+      "role": "Ward Coordinator",
+      "level": "Ward",
+      "responsibility": "Field coordination and reporting"
+    },
+    {
+      "role": "Team Member",
+      "level": "Neighborhood",
+      "responsibility": "Task support and activity participation"
+    }
+  ]
+}

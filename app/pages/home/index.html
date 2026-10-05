@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | National Workforce Grid</title>
+  <link rel="stylesheet" href="../../assets/css/dashboard.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="../../assets/images/logo.svg" alt="NWG logo" />
+        <div>
+          <p class="eyebrow">National</p>
+          <h2>Workforce Grid</h2>
+        </div>
+      </div>
+      <nav id="menu-tree" class="menu-tree"></nav>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="kicker">Operational Command</p>
+          <h1>National Workforce Coordination Dashboard</h1>
+        </div>
+        <button id="lang-toggle">EN | BN</button>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Coverage</span><strong>98.4%</strong></div>
+        <div class="stat-card"><span>Verified</span><strong>2.6M</strong></div>
+        <div class="stat-card"><span>Alerts</span><strong>318</strong></div>
+        <div class="stat-card"><span>Uptime</span><strong>99.97%</strong></div>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel" id="geography-box"></article>
+        <article class="panel">
+          <h3>Role Model</h3>
+          <ul id="role-list"></ul>
+        </article>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel">
+          <h3>Policy Framework</h3>
+          <ul id="policy-list"></ul>
+        </article>
+        <article class="panel">
+          <h3>Mission</h3>
+          <p>Responsible leadership, transparent governance, and digital empowerment for Bangladesh.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div id="last-updated"></div>
+  </footer>
+
+  <script src="../../assets/js/i18n.js"></script>
+  <script src="../../assets/js/render.js"></script>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

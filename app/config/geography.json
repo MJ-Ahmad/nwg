@@ -1,0 +1,14 @@
+{
+  "country": "Bangladesh",
+  "area_km2": 56000,
+  "hierarchy": [
+    { "name_en": "Division", "name_bn": "বিভাগ", "count": 8 },
+    { "name_en": "District", "name_bn": "জেলা", "count": 64 },
+    { "name_en": "Police Station / Thana", "name_bn": "থানা / পুলিশ স্টেশন", "count": "Multiple" },
+    { "name_en": "Union", "name_bn": "ইউনিয়ন", "count": "Distributed" },
+    { "name_en": "Ward", "name_bn": "ওয়ার্ড", "count": "Networked" },
+    { "name_en": "Neighborhood", "name_bn": "পাড়া/পল্লী", "count": "Community-based" }
+  ],
+  "structure_en": "8 Divisions → 64 Districts → Unions → Wards → Neighborhoods",
+  "structure_bn": "৮ বিভাগ → ৬৪ জেলা → ইউনিয়ন → ওয়ার্ড → পাড়া"
+}

@@ -1,0 +1,283 @@
+{
+  "role_framework": {
+    "metadata": {
+      "version": "1.0.0",
+      "description": "Complete role & position structure for National Workforce Grid",
+      "last_updated": "2026-10-04"
+    },
+    "role_categories": [
+      {
+        "category": "Executive Leadership",
+        "roles": [
+          {
+            "id": "role-national-director",
+            "name_en": "National Director",
+            "name_bn": "জাতীয় পরিচালক",
+            "level": 0,
+            "scope": "National",
+            "responsibilities": [
+              "Overall system governance",
+              "Policy formulation",
+              "Resource allocation",
+              "Crisis management"
+            ],
+            "permissions": [
+              "view_all_data",
+              "approve_policies",
+              "manage_all_users",
+              "export_reports"
+            ],
+            "reporting_to": "National Board"
+          },
+          {
+            "id": "role-division-head",
+            "name_en": "Division Head",
+            "name_bn": "বিভাগ প্রধান",
+            "level": 1,
+            "scope": "Division",
+            "responsibilities": [
+              "Division-level coordination",
+              "Policy implementation",
+              "District oversight",
+              "Resource distribution"
+            ],
+            "permissions": [
+              "view_division_data",
+              "manage_districts",
+              "approve_proposals",
+              "generate_reports"
+            ],
+            "reporting_to": "National Director"
+          }
+        ]
+      },
+      {
+        "category": "Operational Management",
+        "roles": [
+          {
+            "id": "role-district-coordinator",
+            "name_en": "District Coordinator",
+            "name_bn": "জেলা সমন্বয়কারী",
+            "level": 2,
+            "scope": "District",
+            "responsibilities": [
+              "District operations",
+              "Union coordination",
+              "Thana management",
+              "Performance tracking"
+            ],
+            "permissions": [
+              "view_district_data",
+              "manage_unions",
+              "schedule_activities",
+              "approve_reports"
+            ],
+            "reporting_to": "Division Head"
+          },
+          {
+            "id": "role-thana-manager",
+            "name_en": "Thana Manager",
+            "name_bn": "থানা ব্যবস্থাপক",
+            "level": 3,
+            "scope": "Thana/Police Station",
+            "responsibilities": [
+              "Thana-level operations",
+              "Union supervision",
+              "Team coordination",
+              "Incident response"
+            ],
+            "permissions": [
+              "view_thana_data",
+              "manage_unions",
+              "create_reports",
+              "allocate_resources"
+            ],
+            "reporting_to": "District Coordinator"
+          },
+          {
+            "id": "role-union-leader",
+            "name_en": "Union Leader",
+            "name_bn": "ইউনিয়ন নেতা",
+            "level": 4,
+            "scope": "Union",
+            "responsibilities": [
+              "Union-level execution",
+              "Ward coordination",
+              "Community engagement",
+              "Activity management"
+            ],
+            "permissions": [
+              "view_union_data",
+              "manage_wards",
+              "post_updates",
+              "view_reports"
+            ],
+            "reporting_to": "Thana Manager"
+          },
+          {
+            "id": "role-ward-coordinator",
+            "name_en": "Ward Coordinator",
+            "name_bn": "ওয়ার্ড সমন্বয়কারী",
+            "level": 5,
+            "scope": "Ward",
+            "responsibilities": [
+              "Ward-level coordination",
+              "Neighborhood management",
+              "Community support",
+              "Data collection"
+            ],
+            "permissions": [
+              "view_ward_data",
+              "manage_neighborhoods",
+              "submit_reports",
+              "communicate_team"
+            ],
+            "reporting_to": "Union Leader"
+          }
+        ]
+      },
+      {
+        "category": "Specialized Functions",
+        "roles": [
+          {
+            "id": "role-identity-officer",
+            "name_en": "Identity & Verification Officer",
+            "name_bn": "পরিচয় ও যাচাইকরণ অফিসার",
+            "level": "Specialist",
+            "scope": "Assigned Area",
+            "responsibilities": [
+              "Identity verification",
+              "DID management",
+              "Credential validation",
+              "Security compliance"
+            ],
+            "permissions": [
+              "verify_identity",
+              "manage_did",
+              "approve_credentials",
+              "audit_records"
+            ],
+            "reporting_to": "Zone Coordinator"
+          },
+          {
+            "id": "role-analytics-officer",
+            "name_en": "Analytics & Intelligence Officer",
+            "name_bn": "বিশ্লেষণ ও বুদ্ধিমত্তা অফিসার",
+            "level": "Specialist",
+            "scope": "Assigned Area",
+            "responsibilities": [
+              "Data analysis",
+              "Performance tracking",
+              "Insight generation",
+              "Report preparation"
+            ],
+            "permissions": [
+              "access_analytics",
+              "generate_reports",
+              "export_data",
+              "create_dashboards"
+            ],
+            "reporting_to": "Zone Coordinator"
+          },
+          {
+            "id": "role-compliance-officer",
+            "name_en": "Compliance & Audit Officer",
+            "name_bn": "কমপ্লায়েন্স ও অডিট অফিসার",
+            "level": "Specialist",
+            "scope": "Assigned Area",
+            "responsibilities": [
+              "Policy compliance",
+              "Audit execution",
+              "Documentation",
+              "Risk assessment"
+            ],
+            "permissions": [
+              "audit_operations",
+              "review_compliance",
+              "generate_audit_reports",
+              "access_logs"
+            ],
+            "reporting_to": "Zone Coordinator"
+          },
+          {
+            "id": "role-geo-specialist",
+            "name_en": "Geo-Grid & Mapping Specialist",
+            "name_bn": "ভৌগোলিক গ্রিড বিশেষজ্ঞ",
+            "level": "Specialist",
+            "scope": "Technical",
+            "responsibilities": [
+              "Geo-data management",
+              "Map maintenance",
+              "Logistics integration",
+              "Coverage tracking"
+            ],
+            "permissions": [
+              "manage_geo_data",
+              "create_maps",
+              "update_coverage",
+              "export_geo_reports"
+            ],
+            "reporting_to": "GeoGrid Module Lead"
+          }
+        ]
+      },
+      {
+        "category": "Support & Administrative",
+        "roles": [
+          {
+            "id": "role-team-member",
+            "name_en": "Team Member",
+            "name_bn": "দল সদস্য",
+            "level": 6,
+            "scope": "Individual",
+            "responsibilities": [
+              "Task execution",
+              "Data submission",
+              "Community support",
+              "Activity participation"
+            ],
+            "permissions": [
+              "view_assigned_data",
+              "submit_updates",
+              "view_team_info",
+              "communicate_team"
+            ],
+            "reporting_to": "Ward Coordinator"
+          },
+          {
+            "id": "role-observer",
+            "name_en": "Observer",
+            "name_bn": "পর্যবেক্ষক",
+            "level": "Limited",
+            "scope": "Read-only",
+            "responsibilities": [
+              "Data observation",
+              "Feedback provision",
+              "Documentation"
+            ],
+            "permissions": [
+              "view_public_data",
+              "submit_feedback",
+              "access_reports"
+            ],
+            "reporting_to": "Area Coordinator"
+          }
+        ]
+      }
+    ],
+    "role_transitions": {
+      "promotion_path": [
+        "Team Member → Ward Coordinator → Union Leader → Thana Manager → District Coordinator → Division Head → National Director"
+      ],
+      "skill_requirements": {
+        "Team Member": ["basic_literacy", "communication"],
+        "Ward Coordinator": ["coordination", "community_engagement", "data_management"],
+        "Union Leader": ["leadership", "planning", "conflict_resolution"],
+        "Thana Manager": ["strategic_thinking", "resource_management", "decision_making"],
+        "District Coordinator": ["vision", "policy_understanding", "political_awareness"],
+        "Division Head": ["governance", "national_perspective", "diplomatic_skill"],
+        "National Director": ["comprehensive_vision", "crisis_management", "international_understanding"]
+      }
+    }
+  }
+}

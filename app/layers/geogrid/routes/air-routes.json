@@ -1,0 +1,48 @@
+{
+  "air_routes": [
+    {
+      "id": "dhaka-to-chattogram",
+      "name_en": "Dhaka - Chattogram",
+      "name_bn": "ঢাকা - চট্টগ্রাম",
+      "type": "domestic",
+      "priority": "critical",
+      "start_point": [23.8103, 90.4125],
+      "end_point": [22.3569, 91.7832],
+      "distance_km": 262,
+      "airspace_altitude": "8000-12000",
+      "coverage_zones": ["dhaka", "narayanganj", "chittagong"],
+      "airports": ["dhaka-airport", "chattogram-airport"],
+      "security_level": "critical",
+      "radar_coverage_points": 25,
+      "flight_corridors": ["air-corridor-1", "air-corridor-2"]
+    },
+    {
+      "id": "dhaka-to-sylhet",
+      "name_en": "Dhaka - Sylhet",
+      "name_bn": "ঢাকা - সিলেট",
+      "type": "domestic",
+      "priority": "high",
+      "start_point": [23.8103, 90.4125],
+      "end_point": [24.8949, 91.8687],
+      "distance_km": 195,
+      "airspace_altitude": "6000-10000",
+      "coverage_zones": ["dhaka", "mymensingh", "sylhet"],
+      "airports": ["dhaka-airport", "sylhet-airport"],
+      "security_level": "high",
+      "radar_coverage_points": 18
+    },
+    {
+      "id": "dhaka-international",
+      "name_en": "Dhaka International",
+      "name_bn": "ঢাকা আন্তর্জাতিক",
+      "type": "international",
+      "priority": "critical",
+      "hub": [23.8103, 90.4125],
+      "airspace_altitude": "10000-35000",
+      "coverage_zones": ["dhaka", "narayanganj", "gazipur"],
+      "primary_airport": "dhaka-airport",
+      "security_level": "critical",
+      "radar_coverage_points": 35
+    }
+  ]
+}

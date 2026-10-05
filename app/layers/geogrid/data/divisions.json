@@ -1,0 +1,157 @@
+{
+  "divisions": [
+    {
+      "id": "dhaka",
+      "name_en": "Dhaka Division",
+      "name_bn": "ঢাকা বিভাগ",
+      "coordinates": [23.8103, 90.4125],
+      "area_km2": 12000,
+      "population": 80000000,
+      "head": "Dhaka Division Head",
+      "status": "operational",
+      "districts": [
+        {
+          "id": "dhaka-district",
+          "name_en": "Dhaka",
+          "name_bn": "ঢাকা",
+          "coordinates": [23.8103, 90.4125],
+          "area_km2": 1463,
+          "population": 15000000,
+          "thanas": [
+            {
+              "id": "motijheel",
+              "name_en": "Motijheel",
+              "name_bn": "মতিঝিল",
+              "coordinates": [23.7645, 90.4153],
+              "area_km2": 28,
+              "population": 350000,
+              "unions": ["union-1", "union-2"]
+            },
+            {
+              "id": "gulshan",
+              "name_en": "Gulshan",
+              "name_bn": "গুলশান",
+              "coordinates": [23.8103, 90.4125],
+              "area_km2": 45,
+              "population": 580000,
+              "unions": ["union-3", "union-4", "union-5"]
+            },
+            {
+              "id": "banani",
+              "name_en": "Banani",
+              "name_bn": "বনানী",
+              "coordinates": [23.8213, 90.3899],
+              "area_km2": 22,
+              "population": 280000,
+              "unions": ["union-6", "union-7"]
+            },
+            {
+              "id": "kawran-bazar",
+              "name_en": "Kawran Bazar",
+              "name_bn": "কাওরান বাজার",
+              "coordinates": [23.7665, 90.3765],
+              "area_km2": 18,
+              "population": 220000,
+              "unions": ["union-8"]
+            }
+          ]
+        },
+        {
+          "id": "narayanganj",
+          "name_en": "Narayanganj",
+          "name_bn": "নারায়ণগঞ্জ",
+          "coordinates": [23.6125, 90.5000],
+          "area_km2": 683,
+          "population": 2500000,
+          "thanas": []
+        },
+        {
+          "id": "gazipur",
+          "name_en": "Gazipur",
+          "name_bn": "গাজীপুর",
+          "coordinates": [23.9981, 90.4155],
+          "area_km2": 1741,
+          "population": 2700000,
+          "thanas": []
+        }
+      ]
+    },
+    {
+      "id": "chittagong",
+      "name_en": "Chattogram Division",
+      "name_bn": "চট্টগ্রাম বিভাগ",
+      "coordinates": [22.3569, 91.7832],
+      "area_km2": 13000,
+      "population": 50000000,
+      "head": "Chattogram Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "khulna",
+      "name_en": "Khulna Division",
+      "name_bn": "খুলনা বিভাগ",
+      "coordinates": [22.8456, 89.5403],
+      "area_km2": 9000,
+      "population": 20000000,
+      "head": "Khulna Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "rajshahi",
+      "name_en": "Rajshahi Division",
+      "name_bn": "রাজশাহী বিভাগ",
+      "coordinates": [24.3745, 88.5670],
+      "area_km2": 8000,
+      "population": 18000000,
+      "head": "Rajshahi Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "barishal",
+      "name_en": "Barishal Division",
+      "name_bn": "বরিশাল বিভাগ",
+      "coordinates": [22.7010, 90.3535],
+      "area_km2": 3500,
+      "population": 10000000,
+      "head": "Barishal Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "sylhet",
+      "name_en": "Sylhet Division",
+      "name_bn": "সিলেট বিভাগ",
+      "coordinates": [24.8949, 91.8687],
+      "area_km2": 2000,
+      "population": 12000000,
+      "head": "Sylhet Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "rangpur",
+      "name_en": "Rangpur Division",
+      "name_bn": "রংপুর বিভাগ",
+      "coordinates": [25.7479, 89.2752],
+      "area_km2": 2500,
+      "population": 15000000,
+      "head": "Rangpur Division Head",
+      "status": "operational",
+      "districts": []
+    },
+    {
+      "id": "mymensingh",
+      "name_en": "Mymensingh Division",
+      "name_bn": "ময়মনসিংহ বিভাগ",
+      "coordinates": [24.7471, 90.4203],
+      "area_km2": 2000,
+      "population": 12000000,
+      "head": "Mymensingh Division Head",
+      "status": "operational",
+      "districts": []
+    }
+  ]
+}
